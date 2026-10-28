@@ -17,7 +17,7 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-    protected Category() {
+    public Category() {
 
     }
 
