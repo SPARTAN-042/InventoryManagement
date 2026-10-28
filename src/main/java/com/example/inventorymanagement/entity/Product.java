@@ -40,7 +40,7 @@ public class Product {
     private LocalDateTime updatedAt;
 
 
-    protected Product() {
+    public Product() {
 
     }
 
