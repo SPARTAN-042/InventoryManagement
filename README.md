@@ -116,16 +116,18 @@ The API will be available at `http://localhost:8081`.
 **Request**
 
 ```http
-POST /api/products
+POST http://localhost:8081/api/products
 Content-Type: application/json
 ```
 
 ```json
 {
-  "name": "Wireless Mouse",
-  "price": 19.99,
-  "quantity": 50,
-  "categoryId": 1
+  "name": "Mechanical Keyboard",
+  "sku": "KEY-001",
+  "description": "Wired mechanical keyboard",
+  "price": 49.99,
+  "quantity": 25,
+  "categoryId": 2
 }
 ```
 
@@ -133,11 +135,15 @@ Content-Type: application/json
 
 ```json
 {
-  "id": 1,
-  "name": "Wireless Mouse",
-  "price": 19.99,
-  "quantity": 50,
-  "categoryId": 1
+  "id": 2,
+  "name": "Mechanical Keyboard",
+  "sku": "KEY-001",
+  "description": "Wired mechanical keyboard",
+  "price": 49.99,
+  "quantity": 25,
+  "categoryName": "Electronics",
+  "createdAt": "2026-10-30T19:43:38.7140675",
+  "updatedAt": "2026-10-30T19:43:38.7140675"
 }
 ```
 
